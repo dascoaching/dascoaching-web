@@ -1,131 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DAS Coaching - B.Ed, HS, D.El.Ed, Notes, eBooks and more." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="DAS Coaching - B.Ed, H.S., D.El.Ed coaching and eBooks"/>
   <title>DAS Coaching</title>
-  <link rel="icon" href="images/das-logo.png" type="image/png" />
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#ff6f00" />
+  <link rel="icon" href="logo.png"/>
   <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #f2f2f2;
-      color: #222;
-      text-align: center;
-    }
-
-    header {
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo {
-      height: 100px;
-    }
-
-    nav {
-      margin: 20px 0;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #ff6f00;
-    }
-
-    section {
-      padding: 30px 15px;
-    }
-
-    .cta {
-      margin: 20px 0;
-    }
-
-    .cta button {
-      margin: 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background: #ff6f00;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    footer {
-      padding: 20px;
-      background: #222;
-      color: #fff;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #2c3e50; color: #fff; padding: 1em 0; text-align: center; }
+    header img { max-height: 80px; display: block; margin: 0 auto 10px; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; }
+    footer { background: #222; color: white; text-align: center; padding: 1em 0; margin-top: 2em; }
+    .courses, .contact { background: white; margin-top: 1em; padding: 1em; border-radius: 8px; }
+    iframe { width: 100%; height: 300px; border: none; margin-top: 1em; }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="images/das-logo.png" alt="DAS Coaching Logo" class="logo" />
-    <h1>DAS Coaching</h1>
-    <p>Learning for Future Educators</p>
+    <img src="logo.png" alt="DAS Coaching Logo">
+    <h1>Welcome to DAS Coaching</h1>
+    <p>Your trusted destination for B.Ed, H.S., and D.El.Ed guidance</p>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#courses">Courses</a>
-    <a href="#ebooks">eBooks</a>
-    <a href="#youtube">YouTube</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="cta">
-    <button onclick="location.href='#courses'">Join Class</button>
-    <button onclick="location.href='#ebooks'">View Notes</button>
-    <button onclick="location.href='#contact'">Contact</button>
-  </section>
-
-  <section id="courses">
-    <h2>Our Courses</h2>
+  <section id="courses" class="courses">
+    <h2>📚 Our Courses</h2>
     <ul>
-      <li>B.Ed - <a href="#">View Materials</a></li>
-      <li>H.S. - <a href="#">View Classes</a></li>
-      <li>D.El.Ed - <a href="#">View Modules</a></li>
+      <li><strong>B.Ed:</strong> <a href="#">Watch Videos</a> | <a href="#">Download Notes</a></li>
+      <li><strong>H.S.:</strong> <a href="#">Watch Videos</a> | <a href="#">Download Notes</a></li>
+      <li><strong>D.El.Ed:</strong> <a href="#">Watch Videos</a> | <a href="#">Download Notes</a></li>
+      <li><strong>eBooks:</strong> <a href="#">Free / Paid PDFs</a></li>
     </ul>
   </section>
 
-  <section id="ebooks">
-    <h2>eBooks & Notes</h2>
-    <p>Download free or premium notes and guides</p>
-    <a href="#">Download Now</a>
-  </section>
-
   <section id="youtube">
-    <h2>YouTube Classes</h2>
-    <iframe width="300" height="180" src="https://www.youtube.com/embed?listType=user_uploads&list=YOUR_CHANNEL_NAME"
-      frameborder="0" allowfullscreen></iframe>
+    <h2>📺 YouTube Channel</h2>
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=dascoaching"></iframe>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📱 <a href="https://wa.me/91XXXXXXXXXX">Chat on WhatsApp</a></p>
-    <p>📧 Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    <p>💳 Pay via UPI: <strong>yourupi@bank</strong></p>
-    <img src="images/qr.png" alt="QR Code" width="150" />
+  <section id="contact" class="contact">
+    <h2>📞 Contact Us</h2>
+    <p><strong>WhatsApp:</strong> 9339697099</p>
+    <p><strong>Email:</strong> contact.dascoaching@gmail.com</p>
   </section>
 
   <footer>
     <p>&copy; 2025 DAS Coaching. All rights reserved.</p>
   </footer>
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(() => {
-        console.log('Service Worker Registered');
-      });
-    }
-  </script>
 </body>
-
 </html>
