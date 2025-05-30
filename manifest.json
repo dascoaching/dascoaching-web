@@ -1,0 +1,13 @@
+{
+  "name": "DAS Coaching",
+  "short_name": "DAS Coaching",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0D47A1",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}
