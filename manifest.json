@@ -1,12 +1,13 @@
+
 {
-  "name": "DAS Coaching",
   "short_name": "DAS Coaching",
+  "name": "DAS Coaching Web App",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0D47A1",
+  "description": "Learn B.Ed, HS & more at DAS Coaching",
   "icons": [{
-    "src": "icon.png",
+    "src": "assets/logo.png",
     "sizes": "192x192",
     "type": "image/png"
   }]
